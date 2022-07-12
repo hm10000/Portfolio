@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="icon" href="img/favicon.png?v=2" type="image/x-icon" />
+
+    <!--style tag-->
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+
+    <!--script tag showContent and canvas-->
+    <script>
+      function showContent() {
+        var temp = document.getElementsByTagName("template")[0];
+        var clon = temp.content.cloneNode(true);
+        document.body.appendChild(clon);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--header-->
+    <header>
+      <!-- portfolio logo -->
+      <a href="index.html">
+        <img src="CSE134-HW2/img/logo.png" alt="Portfolio logo" />
+        <h3>Portfolio</h3>
+      </a>
+    </header>
+
+    <!--navbar -->
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" #>Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--main-->
+    <main>
+      <section>
+        <h1><b>About Me</b></h1>
+      </section>
+
+      <!--hr tag-->
+      <hr />
+
+      <!--figure and figcaption tag-->
+      <figure>
+        <img src="./img/portraitphoto2.png" alt="Portraitphoto" />
+        <figcaption>Portraitphoto</figcaption>
+      </figure>
+
+      <!--aside tag-->
+      <aside>
+        <button onclick="showContent()">Show content</button>
+        <!--template tag-->
+        <template>
+          <svg width="100" height="100">
+            <circle cx="30" cy="30" r="20" fill="skyblue" />
+          </svg>
+          <canvas id="myCanvas" width="200" height="100"></canvas>
+          <p>
+            <em>Lorem Ipsum</em> is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the <span>1500s</span>, when an unknown
+            printer took a galley of type and scrambled it to make a type
+            specimen book.
+            <br />
+
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+
+            <br />
+            It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like <strong>Aldus PageMaker</strong> including
+            versions of Lorem Ipsum.
+          </p>
+
+          <table>
+            <caption>
+              My Timeline
+            </caption>
+
+            <colgroup>
+              <col style="background-color: lightcyan" />
+              <col span="3" style="background-color: lightgoldenrodyellow" />
+            </colgroup>
+
+            <tr>
+              <th>Job title</th>
+              <th>Begin - end date</th>
+              <th>Company</th>
+              <th>Job description</th>
+            </tr>
+            <tr>
+              <td>Frontend developer</td>
+              <td>6/20/2020- 8/20/2020</td>
+              <td>Startup</td>
+              <td>
+                Lorem ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 500s,
+              </td>
+            </tr>
+            <tr>
+              <td>Frontend developer</td>
+              <td>6/22/2021- 8/18/2021</td>
+              <td>Startup</td>
+              <td>
+                Lorem ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 500s,
+              </td>
+            </tr>
+          </table>
+          <!--script tag-->
+          <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("Who am I?", 20, 50);
+          </script>
+        </template>
+      </aside>
+
+      <!--audio-->
+      <audio controls>
+        <source src="horse.ogg" type="audio/ogg" />
+        <source src="horse.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div>
+        <div>
+          <div>
+            <a href="#"><img src="./img/logo.png" alt="Portfolio logo" /></a>
+          </div>
+          <div>
+            <h3>Follow me</h3>
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+          </div>
+          <div>
+            <p>Copyright ©2022 All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

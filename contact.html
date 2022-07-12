@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+    rel="icon"
+    href="img/favicon.png?v=2"
+    type="image/x-icon"
+  />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <!--header-->
+    <header>
+      <!-- portfolio logo -->
+      <a href="index.html">
+        <img src="CSE134-HW2/img/logo.png" alt="Portfolio logo" />
+        <h3>Portfolio</h3>
+      </a>
+    </header>
+
+    <!--navbar -->
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" #>Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--main-->
+    <main>
+      <section>
+        <h1><b>Contact</b></h1>
+      </section>
+
+      <!--hr tag-->
+      <hr />
+
+      <section>
+
+        <h2>Phone</h2>
+        <p>(000)-000-000</p>
+
+        <h2>Email</h2>
+        <p> cse134@ucsd.edu</p>
+
+
+        <h2>Location</h2>
+        <p>Sandiego, California</p>
+
+      </section>
+
+    <section>
+        <iframe id="inlineFrameExample"
+            title="Inline Frame Example"
+            width="300"
+            height="200"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+        </iframe>
+    </section>
+
+    <section>
+        <form action="/action_page.php">
+            <fieldset>
+              <legend>Contact Form</legend>
+
+              <label for="identity">Are you a student or employee and are you male or female:</label>
+
+              <select name="identity" id="identity">
+                <optgroup label="Student">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </optgroup>
+                  <optgroup label="employee">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </optgroup>
+                  <optgroup label="other">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </optgroup>
+              </select><br><br>
+
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"><br><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"><br><br>
+
+              
+              <label for="locations">Location:</label>
+              <input list="location" name="locations" id="locations"><br><br>
+
+              
+              <datalist id="location">
+                <option value="California">
+                <option value="New York">
+                <option value="Sanfrancisco">
+                <option value="Other cities in the USA">
+                <option value="Other countries">
+              </datalist><br>
+
+
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <button type="button">Click Me!</button>
+
+            </fieldset>
+          </form>
+    </section>
+
+    <!--footer-->
+    <footer>
+      <div>
+        <div>
+          <div>
+            <a href="#"><img src="./img/logo.png" alt="Portfolio logo" /></a>
+          </div>
+          <div>
+            <h3>Follow me</h3>
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+          </div>
+          <div>
+            <p>Copyright ©2022 All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
