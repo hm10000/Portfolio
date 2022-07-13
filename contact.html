@@ -3,17 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>Portfolio</title>
-    <link
-    rel="icon"
-    href="img/favicon.png?v=2"
-    type="image/x-icon"
-  />
-      <!--style tag-->
-      <style>
-        h1 {
-          display: inline-block;
-        }
-      </style>
+    <link rel="icon" href="img/favicon.png?v=2" type="image/x-icon" />
+    <!--style tag-->
+    <style>
+      h1 {
+        display: inline-block;
+      }
+    </style>
   </head>
 
   <body>
@@ -46,84 +42,93 @@
       <hr />
 
       <section>
-
         <h2>Phone</h2>
         <p>(714)-332-7287</p>
 
         <h2>Email</h2>
-        <p> hmlim@ucsd.edu</p>
-
+        <p>hmlim@ucsd.edu</p>
 
         <h2>Location</h2>
         <p>Sandiego, California</p>
-
       </section>
 
-    <section>
-        <iframe id="inlineFrameExample"
-            title="Inline Frame Example"
-            width="300"
-            height="200"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+      <div>
+        <iframe
+          id="inlineFrameExample"
+          title="Inline Frame Example"
+          width="300"
+          height="200"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+        >
         </iframe>
-    </section>
+      </div>
 
-    <section>
+      <div>
         <form action="/action_page.php">
-            <fieldset>
-              <legend>Contact Form</legend>
+          <fieldset>
+            <legend>Contact Form</legend>
 
-              <label for="identity">Are you a student or employee and are you male or female:</label>
+            <label for="identity"
+              >Are you a student or employee and are you male or female:</label
+            >
 
-              <select name="identity" id="identity">
-                <optgroup label="Student">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </optgroup>
-                  <optgroup label="employee">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </optgroup>
-                  <optgroup label="other">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </optgroup>
-              </select><br><br>
+            <select name="identity" id="identity">
+              <optgroup label="Student">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </optgroup>
+              <optgroup label="employee">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </optgroup>
+              <optgroup label="other">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </optgroup></select
+            ><br /><br />
 
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name"><br><br>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email"><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br /><br />
 
-              
-              <label for="locations">Location:</label>
-              <input list="location" name="locations" id="locations"><br><br>
+            <label for="locations">Location:</label>
+            <input
+              list="location"
+              name="locations"
+              id="locations"
+            /><br /><br />
 
-              
-              <datalist id="location">
-                <option value="California">
-                <option value="New York">
-                <option value="Sanfrancisco">
-                <option value="Other cities in the USA">
-                <option value="Other countries">
-              </datalist><br>
+            <datalist id="location">
+              <option value="California"></option>
+              <option value="New York"></option>
+              <option value="Sanfrancisco"></option>
+              <option value="Other cities in the USA"></option>
+              <option value="Other countries"></option></datalist
 
+            ><br />
 
-              <label for="message">Message:</label><br>
-              <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="4" cols="50"></textarea
+            ><br /><br />
 
-                <button type="button">Send</button>
-
-            </fieldset>
-          </form>
-    </section>
-
+            <button type="button">Send</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
     <!--footer-->
     <footer>
       <div>
         <div>
           <div>
-            <a href="#"><img src="./img/logo.png" alt="Portfolio logo" width="85" height="85" /></a>
+            <a href="#"
+              ><img
+                src="./img/logo.png"
+                alt="Portfolio logo"
+                width="85"
+                height="85"
+            /></a>
           </div>
           <div>
             <h3>Follow me</h3>
