@@ -12,6 +12,9 @@
       td {
         border: 1px solid black;
       }
+      h1 {
+        display: inline-block;
+      }
     </style>
 
     <!--script tag showContent and canvas-->
@@ -29,8 +32,8 @@
     <header>
       <!-- portfolio logo -->
       <a href="index.html">
-        <img src="CSE134-HW2/img/logo.png" alt="Portfolio logo" />
-        <h3>Portfolio</h3>
+        <img src="img/logo.png" alt="Portfolio logo" width="85" height="85" />
+        <h1>Portfolio</h1>
       </a>
     </header>
 
@@ -55,7 +58,12 @@
 
       <!--figure and figcaption tag-->
       <figure>
-        <img src="./img/portraitphoto2.png" alt="Portraitphoto" />
+        <img
+          src="./img/portraitphoto2.png"
+          alt="Portraitphoto"
+          width="500"
+          height="500"
+        />
         <figcaption>Portraitphoto</figcaption>
       </figure>
 
@@ -69,21 +77,10 @@
           </svg>
           <canvas id="myCanvas" width="200" height="100"></canvas>
           <p>
-            <em>Lorem Ipsum</em> is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the <span>1500s</span>, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book.
-            <br />
-
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged.
-
-            <br />
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like <strong>Aldus PageMaker</strong> including
-            versions of Lorem Ipsum.
+            My name is <em>Hyunmin Lim</em>. I'm a student at UCSD. I'm majoring
+            in computers science. I'm a passionate person and team player.
+            <span>I want to be a software engineer after graduation. </span> I
+            have skills about <strong>Web development, React</strong>.
           </p>
 
           <table>
@@ -107,9 +104,10 @@
               <td>6/20/2020- 8/20/2020</td>
               <td>Startup</td>
               <td>
-                Lorem ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 500s,
+                I was responsible for using their knowledge of programming
+                languages to code user-side applications, including visual
+                elements like menu bars, clickable buttons and the overall
+                layout of websites or web applications
               </td>
             </tr>
             <tr>
@@ -117,9 +115,10 @@
               <td>6/22/2021- 8/18/2021</td>
               <td>Startup</td>
               <td>
-                Lorem ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 500s,
+                I was responsible for using their knowledge of programming
+                languages to code user-side applications, including visual
+                elements like menu bars, clickable buttons and the overall
+                layout of websites or web applications
               </td>
             </tr>
           </table>
@@ -135,8 +134,7 @@
 
       <!--audio-->
       <audio controls>
-        <source src="horse.ogg" type="audio/ogg" />
-        <source src="horse.mp3" type="audio/mpeg" />
+        <source src="about.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
     </main>
@@ -146,7 +144,13 @@
       <div>
         <div>
           <div>
-            <a href="#"><img src="./img/logo.png" alt="Portfolio logo" /></a>
+            <a href="#"
+              ><img
+                src="./img/logo.png"
+                alt="Portfolio logo"
+                width="85"
+                height="85"
+            /></a>
           </div>
           <div>
             <h3>Follow me</h3>
