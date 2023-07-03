@@ -74,7 +74,7 @@
       </section>
 
       <div>
-        <form action="/action_page.php">
+        <form onsubmit="sendEmail(); reset(); return false;">
           <fieldset>
             <legend>Contact Form</legend>
 
@@ -165,6 +165,21 @@
         </div>
       </div>
     </footer>
+    <!-- CDN -->
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+    <script> function sendEmail(){
+      Email.send({
+          Host : "smtp.gmail.com",
+          Username : "hmbest77@gmail.com",
+          Password : "password",
+          To : 'hmlim@ucsd.edu',
+          From : document.getElementById("email").value,
+          Subject : "New Contact Form Enquiry",
+          Body : "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value + "<br> Location: " + document.getElementById("location").value + "<br> Message: " + document.getElementById("message").value
+      }).then(
+        message => alert("Message Sent Successfully")
+      );
+    } </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async

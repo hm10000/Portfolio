@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Portfolio for CSE134B homework",
   "main": "blog.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "devStart": "nodemon server.js"
   },
