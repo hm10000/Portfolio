@@ -9,7 +9,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: url("img/backgroundimage.jpg") no-repeat center center fixed;
+  background: url("/img/backgroundimage.jpg") no-repeat center center fixed;
 }
 
 h1 {
@@ -69,57 +69,35 @@ nav ul li a {
 nav ul li a:hover {
   color: rgb(70, 62, 179);
 }
-.row {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  margin: 100px 0;
-}
-
-.col-1 {
-  flex-basis: 40%;
-  position: relative;
-  margin-left: 50px;
-}
-.col-1 h2 {
-  font-size: 54px;
-}
-.col-1 h3 {
-  font-size: 30px;
-  color: #707070;
-  font-weight: 100;
-  margin: 20px 0 10px;
-}
-
-.col-1 p {
-  font-size: 16px;
-  color: #030ee0;
-  font-weight: 100;
-}
-
-.col-1 h4 {
-  margin: 30px 0;
-  font-size: 20px;
-}
-
-.col-2 img {
-  max-width: 50vw;
-  height: 50vh;
-}
 
 @font-face {
   font-family: headerFont;
-  src: url(fonts/Daviton\ DEMO.otf);
+  src: url(/fonts/Daviton\ DEMO.otf);
 }
 
 @font-face {
   font-family: navbarFont;
-  src: url(fonts/Watermelon\ Days.ttf);
+  src: url(/fonts/Watermelon\ Days.ttf);
 }
 
 @font-face {
   font-family: footerFont;
-  src: url(fonts/Lemon\ Days.ttf);
+  src: url(/fonts/Lemon\ Days.ttf);
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(/fonts/Tabuti.ttf);
+}
+
+@font-face {
+  font-family: contentsFont;
+  src: url(/fonts/Lemon\ Days.ttf);
+}
+
+@font-face {
+  font-family: preFont;
+  src: url(/fonts/LoveChristabelaRegular.ttf);
 }
 
 footer {
@@ -129,16 +107,30 @@ footer {
   color: var(--bold-color);
   margin: 50px;
 }
-.col-2 img:hover {
-  transform: rotate(0.005turn);
+.title {
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+  font-family: titleFont, sans-serif;
+  color: #324254;
 }
-
-footer {
-  font-family: footerFont, sans-serif;
+.contents {
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 1.8vw;
+}
+.contents h3 {
+  font-family: contentsFont, sans-serif;
+  margin-bottom: 5vh;
+  color: #005429;
+}
+.contents pre {
+  font-family: preFont, sans-serif;
+  color: #530a6e;
 }
 
 #footer {
-  position: fixed;
+  position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -187,11 +179,25 @@ footer {
     color: #fff;
   }
 
+  .contents {
+    text-align: center;
+  }
+
+  .contents h3 {
+    font-size: 70px;
+  }
+
+  .contents pre {
+    font-size: 30px;
+    display: none;
+  }
+
   .navbar img {
     visibility: hidden;
   }
 
-  .col-2 {
-    display: none;
+  video {
+    width: 80%;
+    height: auto;
   }
 }

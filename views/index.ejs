@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="icon" href="img/favicon.png?v=2" type="image/x-icon" />
+    <link rel="stylesheet" href="stylesheets/index.css" />
+  </head>
+
+  <body>
+    <!--header-->
+    <header class="container">
+      <div class="navbar">
+        <!-- portfolio logo -->
+        <a href="" class="header">
+          <picture>
+            <source type="image/svg+xml" srcset="img/logo.svg" />
+            <img class="logo" src="img/logo.png" alt="Portfolio logo" />
+          </picture>
+          <h1 class="logoTitle">Portfolio</h1>
+        </a>
+        <!--navbar -->
+        <nav class="menu">
+          <ul>
+            <li><a href="about" class="menu-btn">About</a></li>
+            <li><a href="services" class="menu-btn">Services</a></li>
+            <li><a href="projects" class="menu-btn">Projects</a></li>
+            <li><a href="contact" class="menu-btn">Contact</a></li>
+          </ul>
+        </nav>
+
+        <picture>
+          <source type="image/svg+xml" srcset="img/menu.svg" />
+          <img src="img/menu.png" class="menu-icon" alt="menu icon" />
+        </picture>
+      </div>
+    </header>
+
+    <!--main-->
+    <main>
+      <section class="row">
+        <div class="col-1">
+          <h2>Hello, My name is</h2>
+          <h3><b class="bold">Hyunmin Lim</b></h3>
+          <p>I'm a <i>Software Engineer</i></p>
+          <h4>UCSD computer science major!</h4>
+        </div>
+
+        <div>
+          <picture class="col-2">
+            <img src="./img/portraitphoto1.jpg" alt="Portraitphoto" />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer id="footer">
+      <div>
+        <h3>Follow me</h3>
+        <div class="social-icon">
+          <a class="social-item" href="#">
+            <picture>
+              <source
+                type="image/svg+xml"
+                srcset="img/instagram.svg"
+                width="30"
+                height="30"
+              />
+              <img src="./img/instagram.png" alt="Instagram logo" /> </picture
+          ></a>
+          <a class="social-item" href="#">
+            <picture>
+              <source
+                type="image/svg+xml"
+                srcset="img/facebook.svg"
+                width="30"
+                height="30"
+              />
+              <img src="./img/facebook.png" alt="Facebook logo" /> </picture
+          ></a>
+          <a class="social-item" href="#">
+            <picture>
+              <source
+                type="image/svg+xml"
+                srcset="img/youtube.svg"
+                width="30"
+                height="30"
+              />
+              <img src="./img/youtube.png" alt="Youtube logo" /> </picture
+          ></a>
+          <a class="social-item" href="#">
+            <picture>
+              <source
+                type="image/svg+xml"
+                srcset="img/github.svg"
+                width="30"
+                height="30"
+              />
+              <img src="./img/github.png" alt="Github logo" /> </picture
+          ></a>
+        </div>
+        <div id="copyright">
+          <p>Copyright ©2022 Hyunmin. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KE8DS5WDVP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KE8DS5WDVP");
+    </script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Portfolio</title>
     <link rel="icon" href="img/favicon.png?v=2" type="image/x-icon" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="stylesheets/contact.css" />
   </head>
 
   <body>
@@ -12,7 +12,7 @@
     <header class="container">
       <div class="navbar">
         <!-- portfolio logo -->
-        <a href="index.html" class="header">
+        <a href="./" class="header">
           <picture>
             <source type="image/svg+xml" srcset="img/logo.svg" />
             <img class="logo" src="img/logo.png" alt="Portfolio logo" />
@@ -22,12 +22,13 @@
         <!--navbar -->
         <nav class="menu">
           <ul>
-            <li><a href="about.html" class="menu-btn">About</a></li>
-            <li><a href="services.html" class="menu-btn">Services</a></li>
-            <li><a href="projects.html" class="menu-btn">Projects</a></li>
-            <li><a href="contact.html" class="menu-btn">Contact</a></li>
+            <li><a href="about" class="menu-btn">About</a></li>
+            <li><a href="services" class="menu-btn">Services</a></li>
+            <li><a href="projects" class="menu-btn">Projects</a></li>
+            <li><a href="contact" class="menu-btn">Contact</a></li>
           </ul>
         </nav>
+
 
         <picture>
           <source type="image/svg+xml" srcset="img/menu.svg" />
@@ -38,22 +39,81 @@
 
     <!--main-->
     <main>
-      <section class="row">
-        <div class="col-1">
-          <h2>Hello, My name is</h2>
-          <h3><b class="bold">Hyunmin Lim</b></h3>
-          <p>I'm a <i>Software Engineer</i></p>
-          <h4>UCSD computer science major!</h4>
-        </div>
+      <section class="title">
+        <h2><b>Contact</b></h2>
+      </section>
 
+      <!--hr tag-->
+      <hr />
+
+      <section class="contact">
         <div>
-          <picture class="col-2">
-            <img src="./img/portraitphoto1.jpg" alt="Portraitphoto" />
-          </picture>
+          <div id="phone">
+            <h2 id="phoneH">Phone</h2>
+            <p>(714)-332-7287</p>
+          </div>
+          <div id="em">
+            <h2 id="emH">Email</h2>
+            <p>hmlim@ucsd.edu</p>
+          </div>
+          <div id="loc">
+            <h2 id="loH">Location</h2>
+            <p>Sandiego, California</p>
+          </div>
+        </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.684544719831!2d-117.23620218403009!3d32.88006488602947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06c4414caf4f%3A0xefb6aafc89913ea7!2sUniversity%20of%20California%20San%20Diego!5e0!3m2!1sen!2sus!4v1658894075179!5m2!1sen!2sus"
+            width="400"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
-    </main>
 
+      <div>
+        <form action="/action_page.php">
+          <fieldset>
+            <legend>Contact Form</legend>
+
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            /><br /><br />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            /><br /><br />
+
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+              <option value="California">California</option>
+              <option value="New York">New York</option>
+              <option value="Sanfrancisco">Sanfrancisco</option>
+              <option value="Other cities in the USA">
+                Other cities in the USA
+              </option>
+              <option value="Other countries">Other countries</option>
+            </select>
+            <br /><br />
+
+            <label for="message" id="message">Message:</label><br />
+            <textarea id="message" name="message" rows="4" cols="50"></textarea
+            ><br /><br />
+
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </main>
     <!--footer-->
     <footer id="footer">
       <div>
