@@ -25,10 +25,10 @@ app.get("/projects", (req, res) => {
   res.render("projects");
 });
 
-app.get("/contact", (req, res) => {
-  res.render("contact");
-});
-// const userRouter = require("./routes/users");
+
+const contactRouter = require("./routes/contact");
+
+app.use("/contact", contactRouter);
 
 // app.use("/users", userRouter);
 
