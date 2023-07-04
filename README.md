@@ -6,4 +6,4 @@ Name: Hyunmin Lim
 
 PID: A17133260
 
-Netlify URL: https://delicate-pixie-f8aefb.netlify.app/
+Vercel URL: portfolio-gs00mio1o-hm10000.vercel.app
